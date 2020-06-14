@@ -7,7 +7,7 @@ Acessível no Heroku  por meio da [URL](https://funchealth.herokuapp.com/graphql
 
 Laravel: [https://funchealth.herokuapp.com](https://funchealth.herokuapp.com)
 
-Api GraphQL: [https://funchealth.herokuapp.com/graphql-playground](https://funchealth.herokuapp.com/graphql-playground)
+Testando a Api GraphQL: [https://funchealth.herokuapp.com/graphql-playground](https://funchealth.herokuapp.com/graphql-playground)
 
 ### Endpoints
 Heroku: http://funchealth.herokuapp.com/graphql

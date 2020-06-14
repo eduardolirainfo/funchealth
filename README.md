@@ -3,7 +3,11 @@
 desafio API em PHP + Laravel 
 
 
-Acessível no Heroku  por meio da [url](https://funchealth.herokuapp.com/graphql-playground)
+Acessível no Heroku  por meio na URL [https://funchealth.herokuapp.com/graphql-playground](https://funchealth.herokuapp.com/graphql-playground)
+
+### Endpoints
+Heroku: http://funchealth.herokuapp.com/graphql
+Local: http://localhost:8000/graphql
 
 # Doc
 

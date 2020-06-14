@@ -13,13 +13,7 @@ return [
     |
     */
 
-    'route' => [
-        'uri' => '/graphql-playground',
-        'name' => 'graphql-playground',
-        // 'middleware' => ['web']
-        // 'prefix' => '',
-        // 'domain' => 'graphql.' . env('APP_DOMAIN', 'localhost'),
-    ],
+    'route' => 'graphql-playground',
 
     /*
     |--------------------------------------------------------------------------

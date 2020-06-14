@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
@@ -83,3 +84,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 [Graphql Laravel](https://github.com/rebing/graphql-laravel) 
 [Crhomeisql](https://chrome.google.com/webstore/detail/chromeiql/fkkiamalmpiidkljmicmjfbieiclmeij?hl=pt-PT)
+=======
+# funchealt
+desafio API em PHP + Laravel 
+>>>>>>> b03db8afb829a6893998aa3579ec0e57a3992fc4

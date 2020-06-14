@@ -7,6 +7,7 @@ use App\GraphQL\Queries\AccountQuery;
 use App\GraphQL\Types\AccountType;
 use App\GraphQL\Mutations\ToCashMutation;
 use App\GraphQL\Mutations\DepositMutation;
+use App\GraphQL\Mutations\NewAccountMutation;
 
 return [
 
@@ -68,7 +69,8 @@ return [
             ],
             'mutation'=>[
                 'sacar'=> ToCashMutation::class,
-                'depositar'=> DepositMutation::class
+                'depositar'=> DepositMutation::class,
+                'criarConta'=> NewAccountMutation::class
             ],
             'method' => ['get', 'post']
         ]

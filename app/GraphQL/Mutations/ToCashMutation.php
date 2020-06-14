@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 namespace App\GraphQL\Mutations;
-// 92ef6ef020682289bd7873ce320642c0adc22a92
+
 use Closure;
 use GraphQL;
 use App\Conta;
@@ -42,25 +42,35 @@ class ToCashMutation extends Mutation
 
         ];
     }
+    protected function rules(array $args = []): array
+    {
+        return [
+            'conta' => ['min:5','max:5'],
+            'valor' => ['integer','min:0.1']
+        ];
+    }
+    public function validationErrorMessages(array $args = []): array
+    {
+        return [
+            'conta.min' => 'A conta precisa no mínimo de 5 dígitos.',
+            'conta.max' => 'A conta possui até 5 dígitos',
+            'valor.min' => 'Valor inválido. Saque deve ser maior que zero',
+            'valor.integer' => 'Valor inválido'
+        ];
+    }
+
     public function resolve($root, $args, $context, ResolveInfo $resolveInfo, Closure $getSelectFields)
     {
         $conta = Conta::where('conta', $args['conta'])->first();
 
         if ($conta) {
-            if ($args['valor'] > 0){
               if ($conta->saldo >= $args['valor']) {
-                  $conta->saldo = $conta->saldo - $args['valor'];
+                  $conta->saldo -= $args['valor'];
                   $conta->fill($args);
                   $conta->save();
               } else {
                   return new Error('Saldo insuficiente');
               }
-            }elseif ($args['valor'] == 0){
-                      return new Error('Valor de saque Nulo');
-                }else{
-                      return new Error('Valor incorreto');
-                     }
-
             return $conta;
 
         } else {

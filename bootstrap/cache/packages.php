@@ -52,6 +52,19 @@
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
+  'nuwave/lighthouse' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Nuwave\\Lighthouse\\LighthouseServiceProvider',
+      1 => 'Nuwave\\Lighthouse\\OrderBy\\OrderByServiceProvider',
+      2 => 'Nuwave\\Lighthouse\\SoftDeletes\\SoftDeletesServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'graphql' => 'Nuwave\\Lighthouse\\GraphQL',
+    ),
+  ),
   'rebing/graphql-laravel' => 
   array (
     'providers' => 

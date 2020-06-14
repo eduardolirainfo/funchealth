@@ -15,7 +15,8 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "mll-lab/laravel-graphql-playground": "^2.1",
-        "rebing/graphql-laravel": "^5.1"
+        "rebing/graphql-laravel": "^5.1",
+        "ext-pdo_sqlite": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

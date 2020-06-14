@@ -36,7 +36,7 @@ class DepositMutation extends Mutation
             ],
             'saldo'=>[
                 'name'=> 'valor',
-                'type' => Type::int(),
+                'type' => Type::float(),
                 'description' => 'O saldo do usuário no banco',
             ]
         ];

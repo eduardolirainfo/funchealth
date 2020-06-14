@@ -31,7 +31,7 @@ class AccountQuery extends Query
         return [
             'conta' => [
                 'name' => 'conta',
-                'type' => Type::int(),
+                'type' => Type::nonNull(Type::int()),
                 'description' => 'O número da conta'
             ]
         ];

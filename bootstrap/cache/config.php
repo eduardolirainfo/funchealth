@@ -4,7 +4,7 @@
     'name' => 'funchealt',
     'env' => 'local',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'https://funchealth.herokuapp.com',
     'asset_url' => NULL,
     'timezone' => 'UTC',
     'locale' => 'en',
@@ -357,7 +357,7 @@
       array (
         'driver' => 'local',
         'root' => 'C:\\xampp\\htdocs\\DesafioHealth\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'url' => 'https://funchealth.herokuapp.com/storage',
         'visibility' => 'public',
       ),
       's3' =>

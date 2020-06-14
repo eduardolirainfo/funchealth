@@ -102,7 +102,7 @@
                     saldo(conta: $dice)
                    }`;
 
-    fetch('http://localhost:8000/graphql', {
+    fetch('https://funchealth.herokuapp.com/graphql', {
       method: 'POST',
       headers: {
       'Content-Type': 'application/json',

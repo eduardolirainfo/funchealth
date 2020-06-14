@@ -18,7 +18,7 @@ use Illuminate\Support\Str;
 |
 */
 
-$factory->define(Conta::class, function (Faker $faker) {
+$factory->define(Conta::class, function () {
     return [
         'conta' => rand(50000,54321)
         ];

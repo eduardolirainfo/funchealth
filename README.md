@@ -1,5 +1,5 @@
 =======
-# funchealt
+# FuncHealth
 desafio API em PHP + Laravel 
 
 
